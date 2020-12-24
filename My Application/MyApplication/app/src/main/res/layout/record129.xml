@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    >
+        <com.google.android.material.tabs.TabLayout
+            android:id = "@+id/record_tabs129"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarStyle="insideInset"
+            android:theme="@style/AppTheme"/>
+        <androidx.viewpager.widget.ViewPager
+            android:id = "@+id/record_viewpager129"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请选择分类"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorText_common"/>
+        <GridView
+            android:layout_marginTop="20dp"
+            android:id = "@+id/outcome_gridview129"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="5"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            />
+        <TextView
+            android:id="@+id/out_date_set129"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  日期"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ico_calender"
+            android:textSize="18sp"
+            android:textColor="@color/colorText_common"
+            android:clickable="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+        <TextView
+            android:id = "@+id/out_description_set129"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="  备注"
+            android:drawableLeft="@drawable/ico_description"
+            android:textColor="@color/colorText_common"
+            android:clickable="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+        <Button
+            android:id = "@+id/out_button_save129"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "保存"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            />
+</LinearLayout>
